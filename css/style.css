@@ -148,15 +148,6 @@ button {
 
 .main__left-btn {
   margin-top: 45px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .main__right {
@@ -262,15 +253,6 @@ button {
 
 .services__button-btn {
   margin-top: 70px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .services__image {
@@ -469,7 +451,6 @@ button {
 
 .article__inner {
   margin-top: 215px;
-  margin-left: 80px;
   position: relative;
 }
 
@@ -562,6 +543,16 @@ button {
 
 .article__inner-dots {
   position: absolute;
+  z-index: -1;
+  top: 85px;
+  left: 0px;
+}
+
+.article__inner-image {
+  position: absolute;
+  z-index: -1;
+  top: -45px;
+  right: -500px;
 }
 
 .footer {
@@ -569,6 +560,7 @@ button {
 }
 
 .footer__inner {
+  position: relative;
   margin-top: 200px;
   padding-top: 118px;
   padding-bottom: 110px;
@@ -655,5 +647,18 @@ button {
 
 .footer__menu-item:hover {
   text-decoration: underline;
+}
+
+.footer__dots {
+  position: absolute;
+  bottom: 0px;
+  left: -150px;
+}
+
+.footer__dot {
+  position: absolute;
+  top: -70px;
+  right: -200px;
+  z-index: -1;
 }
 /*# sourceMappingURL=style.css.map */

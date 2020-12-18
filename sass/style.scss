@@ -111,9 +111,7 @@ button{
         &-btn {
             @extend %button;
             margin-top: 45px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            
             
             &:hover {
                 @extend %button-hover;
@@ -213,9 +211,6 @@ button{
         &-btn {
             @extend %button;
             margin-top: 70px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
 
             &:hover {
                 @extend %button-hover;
@@ -373,7 +368,6 @@ button{
             font-weight: bold;
             font-size: 22px;
             color: #FFFFFF;
-
         }
 
         &-text{
@@ -410,7 +404,6 @@ button{
 
     &__inner{
         margin-top: 215px;
-        margin-left: 80px;
         position: relative;
 
         &-title{
@@ -476,9 +469,6 @@ button{
                     padding-left: 40px;
                     transition: all 0.9s;
                 }
-                // &:active{
-                //     color: #0d3f86;
-                // }
             }
         }
 
@@ -502,15 +492,25 @@ button{
 
         &-dots{
             position: absolute;
+            z-index: -1;
+            top: 85px;
+            left: 0px;
+        }
+
+        &-image{
+            position: absolute;
+            z-index: -1;
+            top: -45px;
+            right: -500px;
         }
     }
-
 }
 
 .footer{
     background: linear-gradient(183.41deg, #67C3F3 -8.57%, #5A98F2 82.96%);
 
     &__inner{
+        position: relative;
         margin-top: 200px;
         padding-top: 118px;
         padding-bottom:110px;
@@ -578,6 +578,19 @@ button{
                 text-decoration: underline;
             }
         }
+    }
+
+    &__dots{
+        position: absolute;
+        bottom: 0px;
+        left: -150px;
+    }
+
+    &__dot{
+        position: absolute;
+        top: -70px;
+        right: -200px;
+        z-index: -1;
     }
 }
 
